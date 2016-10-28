@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>reveal.js</title>
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/black.css">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-markdown>
+                    <script type="text/template">
+                        ### What are the updates?
+                        * All tools are already available except one thing which is computer monitor. I will get this on Tuesday.
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ### I make simple schedule.
+                        * For I have November, December, January. So three full months to make the device.
+                        * This also for testing.
+                        * The plan is now to make the prototype for a month full.
+                        * So in the end of the November I can see if I can upscale or downscale the project.
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ### So, from the previous presentation. I have three major things to do.
+                        * Making the hardware.
+                            * Designing the case (this will have the least priority).
+                            * Programming the modules and sensors.
+                        * Programming the server.
+                        * Writing the report.
+                    </script>
+                </section>
+                <section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ### Making the hardware will be the hardest part.
+                            * Ideally this can be done within a month.
+                            * Realistically this can be done within one and a half month.
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ### What are the most difficult parts?
+                            * Programming the Raspberry PI.
+                            * Wiring the modules and sensors (need to be extra careful on this).
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ### What is the worst case scenario?
+                            * If I break the Raspberry PI or any of the modules and sensors (will take additional 1 - 2 days to re - order back).
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ### Designing case will be done in January. I planned to use 3D printer for this.
+                        </script>
+                    </section>
+                </section>
+                <section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ### Programming server to make API is easy.
+                            * Ideally this can be done within 1 to 2 days.
+                            * Realistically this can be done within a week.
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ### What are the most difficult parts?
+                            * Making an API is simple. It just pulling data from database. I will make the API with MongoDB.
+                                * If necessary.
+                                    * Programming logic to process the API.
+                                    * Programming the Kaldi speech recognition.
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ### What is the worst case scenario?
+                            * Nothing, I hope my computer does not broken or get stolen.
+                        </script>
+                    </section>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                    ### Writing the report will go along the project. I planned to have progresses on report every 2 days.
+                    </script>
+                </section>
+            </div>
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+            // More info https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                history: true,
+
+                // More info https://github.com/hakimel/reveal.js#dependencies
+                dependencies: [
+                    { src: 'plugin/markdown/marked.js' },
+                    { src: 'plugin/markdown/markdown.js' },
+                    { src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+                ]
+            });
+        </script>
+    </body>
+</html>
